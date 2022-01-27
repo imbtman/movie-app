@@ -68,7 +68,7 @@ export default function useGetResults(data, loading, type) {
                 className="object-cover cursor-pointer group-hover:opacity-75"
               />
             </div>
-            <div className="w-60">
+            <div className="lg:w-60">
               <h4 className="text-md font-semibold  mb-1 ">
                 {type === "tv" ? file.name : file.title}
               </h4>
