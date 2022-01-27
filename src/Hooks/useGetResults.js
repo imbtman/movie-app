@@ -47,7 +47,7 @@ export default function useGetResults(data, loading, type) {
     : data.map((file) => (
         <li key={file.id} className="relative ">
           <Link to={`/movie/${file.id}`}>
-            <div className="relative mb-3 group scroll-smooth lg:w-60 aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
+            <div className="relative mb-3 group scroll-smooth w-44 lg:w-60 aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
               <div className="absolute w-12 h-12 top-3 right-3 bg-black rounded-full border-4 border-black font-bold ">
                 <CircularProgressbar
                   value={file.vote_average}
