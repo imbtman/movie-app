@@ -63,7 +63,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="relative z-10 px-2 flex lg:px-0">
+              <div className="hidden relative z-10 px-2 lg:flex lg:px-0">
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block h-3 w-auto"
