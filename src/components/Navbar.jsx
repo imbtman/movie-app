@@ -30,7 +30,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <Link to="/">
                     <img
-                      className="block h-5 w-auto"
+                      className="block h-9  w-auto"
                       src={logo}
                       alt="Workflow"
                     />
