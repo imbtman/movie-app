@@ -17,17 +17,16 @@ export default function Search() {
     errorMovie,
   } = useFetch(API_URL_SEARCH);
 
-  const movieList = useGetResults(movies, loadingMovies, "movie");
-  console.log(movieList);
+  const movieList = useGetResults(movies, loadingMovies, "movie")
 
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto my-16 px-2 sm:px-4 lg:px-8">
-        <h2 className="text-3xl leading-6 font-semibold text-gray-900 text-center mb-12">
+      <div className="max-w-7xl mx-auto  my-8  lg:my-14  px-4 sm:px-4 lg:px-8">
+        <h2 className="text-2xl  lg:text-3xl leading-6 font-semibold text-gray-900 text-center mb-12">
           Search results for "{q}"
         </h2>
-        <ul className="flex flex-wrap scroll-smooth justify-center  gap-x-6 gap-y-8 sm:gap-x-8">
+        <ul className="grid grid-cols-2 lg:flex flex-wrap scroll-smooth justify-center  gap-x-6 gap-y-8 sm:gap-x-8">
           {movieList}
         </ul>
       </div>
